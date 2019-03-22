@@ -565,7 +565,6 @@ Return the last entry deleted."
     (error
      (message "multishell-kill-buffer-query-function error: %s" err)))
   t)
-(add-hook 'kill-buffer-query-functions #'multishell-kill-buffer-query-function)
 
 (defun multishell-get-visible-window-for-buffer (buffer)
   "Return visible window containing buffer."
