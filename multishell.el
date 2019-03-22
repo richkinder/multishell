@@ -620,7 +620,7 @@ Input and completion can include associated path, if any.
 
 Return what's provided, if anything, else nil."
   (let* ((was-multishell-history multishell-history)
-         (candidates (multishell-all-entries 'active-duplicated))
+         (candidates (multishell-all-entries))
          (multishell-completing-read t)
          (got
           ;; Use `cl-letf' to dynamically bind multishell-list to
